@@ -1,0 +1,80 @@
+&__follow-us {
+    font-family: $mont;
+	background-color: rgba(0, 0, 0, 0.3);
+	&__content-icons {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: start;
+		&--heading {
+			font-size: 1.4em;
+			margin-right: 30px;
+			color: #8f8897;
+			text-transform: uppercase;
+		}
+
+		&--box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			background-color: $iconic;
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+			margin-right: 20px;
+
+			a {
+				font-size: 1.6em;
+				color: #fff;
+
+				.fa-facebook {
+					background: none;
+				}
+			}
+		}
+	}
+
+	&__content-text {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: start;
+
+		&--heading {
+			font-size: 1.4em;
+			margin-right: 30px;
+			color: #8f8897;
+			text-transform: uppercase;
+		}
+
+		&__form {
+			&--email {
+				.visually-hidden {
+					font-size: 1.2em;
+				}
+
+				input::placeholder {
+					font-size: 0.8em;
+				}
+
+				input {
+					font-size: 1.8em;
+				}
+			}
+
+			&--button {
+				button {
+					font-size: 1.2em;
+					background-color: $iconic;
+					border-radius: 5px;
+					color: #fff;
+					text-align: center;
+					text-transform: uppercase;
+					padding: 9px 20px;
+					letter-spacing: 2px;
+				}
+			}
+		}
+	}
+}

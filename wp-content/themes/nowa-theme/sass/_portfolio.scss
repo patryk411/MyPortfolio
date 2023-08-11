@@ -1,0 +1,59 @@
+&__portfolio {
+    margin: 100px 0;
+    // position: relative;
+    &--heading {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(50%,-50%);
+        @include metabox;
+        margin-bottom: 150px;
+    }
+
+    &__projects {
+        &__single {
+            font-family: $roboto;
+            background: transparent;
+            background-color: rgba(0,0,0,.3);
+            box-shadow: 0px 0px 39px 3px rgba(0, 0, 0, 1);
+            border: none;
+            width: 35%;
+            transition: transform 1s;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                border: none;
+            }
+            
+            .reference {
+                text-decoration: none;
+
+                .card-body {
+                margin: 20px;
+                color: #fff;
+                .card-head {
+                    padding: 10px 0;
+                    font-size: 1.8em;
+                }
+                
+                .card-text {
+                    padding: 5px 0;
+                    font-size: 1.4em;
+                }
+                
+                .card-time {
+                    font-size: 1.4em;
+                }
+            }
+        }
+        }
+
+        &__single:hover {
+            transform: scale(1.1);
+            // cursor: pointer;
+        }
+    }
+}

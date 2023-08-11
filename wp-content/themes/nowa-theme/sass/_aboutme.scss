@@ -1,0 +1,25 @@
+    &__about {
+        margin: 50px 0;
+        &__content {
+            font-family: $mont;
+
+            &--metabox {
+				@include metabox;
+            }
+            
+            p {
+                font-size: 1.6em;
+                text-align: justify;
+                margin-top: 70px;
+                width: 90%;
+            }
+            
+        }
+
+        &__img {
+            img {
+                border-radius: 7%;
+            }
+        }
+    }
+

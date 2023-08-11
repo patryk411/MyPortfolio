@@ -1,0 +1,53 @@
+@import './fonts';
+@import './colors';
+@import './components';
+@import './mixins';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $mont;
+    background-color: #333;
+    color: #fff;
+}
+
+@import './nav';
+@import './header';
+@import './footer';
+@import './section-baner';
+
+.main {
+    @import './skills';
+    @import './standards';
+    @import './form';
+}
+
+.subpage {
+    @import './aboutme';
+    @import './portfolio';
+    @import './single-realization';
+    @import './contactme';
+    @import './follow-us';
+}
+   
+
+
+@import './media768';
+@import './media576';
+
+
+
+
+
+
+

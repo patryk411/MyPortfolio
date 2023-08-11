@@ -1,0 +1,502 @@
+@media (max-width: 768px) {
+
+.navbar {
+        font-family: $mont;
+        background: transparent;
+        z-index: 10;
+        margin-top: 30px;
+}
+
+.shadow-bg {
+    background-color: rgba(0,0,0,.9);
+}
+
+.main {
+    &__skills {
+        margin-top: 100px;
+        background-color: #333;
+        
+        &--subtitle {
+            font-size: 2em;
+        }
+        
+        &--title {
+            color: $iconic;
+            font-size: 5em;
+            margin: 10px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        &__lines {
+            background-color: $iconic;
+            width: 15%;
+            height: 5px;
+        }
+        
+        &__main {
+            margin: 50px 0 50px;
+            .row {
+                .card {
+                    padding: 20px 20px 30px;
+                    background-color: rgba(0,0,0,.3);
+                    box-shadow: 0px 0px 39px 3px rgba(0, 0, 0, 1);
+                    margin: 20px 5px 50px;
+                    width: 45%;
+                    .card-body {
+                        .card-icon {
+                            padding: 50px 0 10px;
+                            
+                            .svg-skills {
+                            height: 100%;
+                        }
+                    }
+                    
+                    
+                    .card-title {
+                        font-size: 3em;
+                        font-weight: bold;
+                        padding: 20px 0;
+                    }
+                    
+                    .card-text {
+                        font-size: 1.8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+&__standards {
+    &__main {
+        margin-top: 50px;
+        &__top {
+            &__right {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                padding-left: 40px;
+                &--head {
+                    font-size: 4em;
+                    font-weight: bold;
+                }
+                
+                &--text {
+                    font-size: 1.7em;
+                }
+                
+                &__list {
+                    margin-left: 10px;
+                    li {
+                        margin: 10px 0;
+                        font-size: 1.5em;
+                        list-style-type:decimal-leading-zero;
+                    }
+                }
+
+                .lines {
+                    margin: 10px 0;
+                }
+            }
+            
+            &__left {
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            
+        }
+        
+        &__bot {
+            margin-top: 100px;
+            &__left {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                padding-right: 40px;
+                &--head {
+                    font-size: 4em;
+                    font-weight: bold;
+                }
+                
+                &--text {
+                    font-size: 1.7em;
+                }
+                
+                &__list {
+                    margin-left: 10px;
+                    li {
+                        margin: 10px 0;
+                        font-size: 1.5em;
+                            list-style-type:decimal-leading-zero;
+                        }
+                    }
+                    
+                    .lines {
+                        margin: 10px 0;
+                    }
+                }
+                
+                &__right {
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__contact {
+        // background-color: #555;
+        margin-top: 100px;
+        
+        &--header {
+            font-size: 4.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            
+            .contact-span {
+                color: $iconic;
+            }
+        }
+        
+        &__form {
+            margin: 20px 0;
+            form {
+                input,textarea {
+                    font-size: 2em;
+                    border: none;
+                    background-color: rgba(0,0,0,.3);
+                    outline: none;
+                    color: #fff;
+                    padding: 20px;
+                }
+                
+                .two-part {
+                    margin: 20px 0;
+                }
+                
+                textarea:focus,
+                input:focus {
+                    color: #fff;
+                    background: none;
+                    background-color: rgba(0,0,0,.3);
+                }
+                
+                textarea {
+                    min-height: 100px;
+                    max-height: 300px;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: rgba(0,0,0,.3);
+    
+    &__content {
+        text-align: center;
+        font-size: 3em;    
+        color: #666;
+        
+        a {
+            text-decoration: none;
+            color: $iconic;
+        }
+    }
+}
+
+.subpage {
+    &__about {
+        margin: 50px 0;
+        &__content {
+            font-family: $mont;
+
+            &--metabox {
+				@include metabox-md;
+            }
+            
+            p {
+                font-size: 2.2em;
+                text-align: justify;
+                margin-top: 70px;
+                width: 100%;
+            }
+            
+        }
+
+        &__img {
+            img {
+                width: 100%;
+                border-radius: 7%;
+            }
+        }
+    }
+
+    &__portfolio {
+        margin: 100px 0;
+        &--heading {
+            @include metabox-md;
+            margin-bottom: 100px;
+        }
+    
+        &__projects {
+            &__single {
+                font-family: $roboto;
+                background: transparent;
+                background-color: rgba(0,0,0,.3);
+                box-shadow: 0px 0px 39px 3px rgba(0, 0, 0, 1);
+                border: none;
+                width: 70%;
+                transition: transform 1s;
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    background-position: center;
+                    background-size: cover;
+                    border: none;
+                }
+                
+                .reference {
+                    text-decoration: none;
+    
+                    .card-body {
+                    margin: 20px;
+                    color: #fff;
+                    .card-head {
+                        padding: 10px 0;
+                        font-size: 2.5em;
+                    }
+                    
+                    .card-text {
+                        padding: 5px 0;
+                        font-size: 2em;
+                    }
+                    
+                    .card-time {
+                        font-size: 1.7em;
+                    }
+                }
+            }
+            }
+    
+            &__single:hover {
+                transform: scale(1.1);
+                // cursor: pointer;
+            }
+        }
+    }
+
+    &__single-realization {
+        margin: 50px;
+        &--heading {
+            @include metabox-md;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+    
+        &__single-project {
+            p {
+                font-family: $roboto;
+                margin: 100px 0 60px;
+                font-size: 2.6em;
+                padding-right: 100px;
+            }
+        }
+    
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    &__contact-page {
+        margin-bottom: 100px;
+        &--heading {
+            @include metabox-md;
+            margin-top: 50px;
+        }
+    
+        &__content {
+            &--head {
+                margin: 70px 0 50px;
+                font-size: 6em;
+                font-weight: bold;
+                font-family: $mont;
+            }
+    
+            &__left {
+                &--text {
+                    font-size: 2em;
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+            }
+    
+            &__right {
+                background-color: $iconic;
+                form {
+                    padding: 20px 0;
+                    .mb-3 {
+                        padding: 20px;
+                    }
+    
+                    .form-control {
+                        border: none;
+                        border-bottom: 3px solid #fff;
+                    }
+    
+                    label, input {
+                        margin: 20px;
+                        color: #fff;
+                        font-size: 2em;
+                    }
+                    
+                    input {
+                        padding: 10px;
+                        background: none;
+                        width: 80%;
+                    }
+    
+                    input::placeholder {
+                        color: rgba(255,255,255, .6);
+                    }
+                    
+    
+                    input:focus {
+                        outline: none;
+                        background: $iconic;
+                        color: #fff;
+    
+                        .form-control {
+                            border: none;
+                            border-bottom: 3px solid #fff;
+                            width: 80%;
+                        }
+                    }
+    
+                    .form-right {
+                        position: relative;
+                        padding-bottom: 60px;
+                        textarea {
+                            min-height: 65px;
+                            max-height: 180px;
+                            background: $iconic;
+                            color: #fff;
+                            font-size: 1.4em;
+                            padding: 10px;
+                            height: 65px;
+                        }
+                        
+                        textarea:focus {
+                            border: 1px solid #fff;
+                        }
+    
+                        .contactme-btn {
+                            position: absolute;
+                            top: 85%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            font-weight: bold;
+                            border-radius: 10px;
+                            background-color: #fff;
+                            color: $iconic;
+                            text-transform: uppercase;
+                            font-size: 1.6em;
+                            width: 200px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__follow-us {
+        background-color: rgba(0,0,0,.3);
+        &__content-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            margin: 30px 0px 50px;
+            &--heading {
+                font-size: 2em;
+                margin-right: 30px;
+                color: #8f8897;
+                text-transform: uppercase;
+            }
+
+            &--box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: $iconic;
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+                margin-right: 20px;
+
+                a {
+                    font-size: 1.6em;
+                    color: #fff;
+                }
+            }
+        }
+
+        &__content-text {
+            padding-bottom: 100px;
+            &--heading {
+                font-size: 2em;
+                margin-right: 30px;
+                margin-bottom: 10px;
+                color: #8f8897;
+                text-transform: uppercase;
+            }
+
+            &__form {
+                &--email {
+                    .visually-hidden {
+                        font-size: 1.1em;
+                    }
+
+                    input::placeholder {
+                        font-size: 0.9em;
+                    }
+
+                    input {
+                        font-size: 2.2em;
+                    }
+                }
+
+                &--button {
+                    .btn-subscribe {
+                        font-size: 1.5em;
+                        background-color: $iconic;
+                        border-radius: 5px;
+                        color: #fff;
+                        text-align: center;
+                        text-transform: uppercase;
+                        padding: 10px 20px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+}
+
+

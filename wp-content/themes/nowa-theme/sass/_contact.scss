@@ -1,0 +1,45 @@
+&__contact {
+    // background-color: #555;
+    margin-top: 100px;
+
+    &--header {
+        font-size: 4em;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        
+        .contact-span {
+            color: $iconic;
+        }
+    }
+
+    &__form {
+        margin: 20px 0;
+        form {
+            input,textarea {
+                font-size: 1.4em;
+                border: none;
+                background-color: rgba(0,0,0,.3);
+                outline: none;
+                color: #fff;
+                padding: 20px;
+            }
+            
+            .two-part {
+                margin: 20px 0;
+            }
+            
+            textarea:focus,
+            input:focus {
+                color: #fff;
+                background: none;
+                background-color: rgba(0,0,0,.3);
+            }
+
+            textarea {
+                min-height: 100px;
+                max-height: 300px;
+            }
+        }
+    }
+}

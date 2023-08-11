@@ -1,0 +1,53 @@
+    &__skills {
+    margin-top: 100px;
+    background-color: #333;
+        
+    &--subtitle {
+        font-size: 2em;
+    }
+    
+    &--title {
+        color: $iconic;
+        font-size: 5em;
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__lines {
+        background-color: $iconic;
+        width: 15%;
+        height: 5px;
+    }
+
+    &__main {
+        margin: 50px 0 50px;
+            .card {
+                padding: 20px 20px 30px;
+                margin: 20px 5px 50px;
+                background-color: rgba(0,0,0,.3);
+                box-shadow: 0px 0px 39px 3px rgba(0, 0, 0, 1);
+                width: 25%;
+            .card-body {
+                .card-icon {
+                    padding: 50px 0 10px;
+                    
+                    .svg-skills {
+                        height: 100%;
+                    }
+                }
+                
+                
+                .card-title {
+                    font-size: 2em;
+                    font-weight: bold;
+                    padding: 20px 0;
+                }
+                
+                .card-text {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}

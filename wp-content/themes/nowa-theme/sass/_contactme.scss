@@ -1,0 +1,99 @@
+&__contact-page {
+    margin-bottom: 100px;
+    &--heading {
+        @include metabox;
+        margin-top: 50px;
+    }
+
+    &__content {
+        &--head {
+            margin: 70px 0 50px;
+            font-size: 5em;
+            font-weight: bold;
+            font-family: $mont;
+        }
+
+        &__left {
+            &--text {
+                font-size: 1.4em;
+                width: 75%;
+            }
+        }
+
+        &__right {
+            background-color: $iconic;
+            form {
+
+                .mb-3 {
+                    padding: 20px;
+                }
+
+                .form-control {
+                    border: none;
+                    border-bottom: 3px solid #fff;
+                }
+
+                label, input {
+                    margin: 20px;
+                    color: #fff;
+                    font-size: 1.4em;
+                }
+                
+                input {
+                    padding: 10px;
+                    background: none;
+                    width: 80%;
+                }
+
+                input::placeholder {
+                    color: rgba(255,255,255, .6);
+                }
+                
+
+                input:focus {
+                    outline: none;
+                    background: $iconic;
+                    color: #fff;
+
+                    .form-control {
+                        border: none;
+                        border-bottom: 3px solid #fff;
+                        width: 80%;
+                    }
+                }
+
+                .form-right {
+                    position: relative;
+                    textarea {
+                        min-height: 65px;
+                        max-height: 180px;
+                        background: $iconic;
+                        color: #fff;
+                        font-size: 1.4em;
+                        padding: 10px;
+                        height: 65px;
+                    }
+                    
+                    textarea:focus {
+                        border: 1px solid #fff;
+                    }
+
+                    .contactme-btn {
+                        position: absolute;
+                        top: 85%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-weight: bold;
+                        border-radius: 10px;
+                        font-size: 1.6em;
+                        width: 200px;
+                        height: 50px;
+                        background-color: #fff;
+                        color: $iconic;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
